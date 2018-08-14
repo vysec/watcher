@@ -1,54 +1,59 @@
 {
 	"ImportPath": "github.com/dearcode/watcher",
-	"GoVersion": "go1.9",
-	"GodepVersion": "v79",
+	"GoVersion": "go1.10",
+	"GodepVersion": "v80",
 	"Packages": [
 		"./..."
 	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/Shopify/sarama",
-			"Comment": "v1.12.0-33-gbe3a4e3",
-			"Rev": "be3a4e355292a75fcc566f76de8bcf28befd4825"
+			"Comment": "v1.17.0-32-ge7238b1",
+			"Rev": "e7238b119b7daab993720f0153eafb88e2b0ac1f"
 		},
 		{
 			"ImportPath": "github.com/bsm/sarama-cluster",
-			"Comment": "v2.1.8-16-g96ddfcd",
-			"Rev": "96ddfcd36f56f11fc80ff0d466128c1825ace08a"
+			"Comment": "v2.1.13-8-g7e67d87",
+			"Rev": "7e67d87a6b3f83fe08c096fd084691bd9dca112f"
 		},
 		{
 			"ImportPath": "github.com/davecgh/go-spew/spew",
-			"Comment": "v1.1.0-7-ga476722",
-			"Rev": "a476722483882dd40b8111f0eb64e1d7f43f56e4"
+			"Comment": "v1.1.0-12-g8991bc2",
+			"Rev": "8991bc29aa16c548c550c7ff78260e27b9ab7c73"
 		},
 		{
 			"ImportPath": "github.com/dearcode/crab/cache",
-			"Comment": "v1.0.0-6-g43df0be",
-			"Rev": "43df0be6cd8c8aa9ea49ae3b92d591d2f4e294b6"
+			"Comment": "v1.6.3",
+			"Rev": "52cc049ef5040e3fe9555ecec713b6d9b35956df"
 		},
 		{
 			"ImportPath": "github.com/dearcode/crab/http/client",
-			"Comment": "v1.0.0-6-g43df0be",
-			"Rev": "43df0be6cd8c8aa9ea49ae3b92d591d2f4e294b6"
+			"Comment": "v1.6.3",
+			"Rev": "52cc049ef5040e3fe9555ecec713b6d9b35956df"
 		},
 		{
-			"ImportPath": "github.com/dearcode/crab/util",
-			"Comment": "v1.0.0-6-g43df0be",
-			"Rev": "43df0be6cd8c8aa9ea49ae3b92d591d2f4e294b6"
+			"ImportPath": "github.com/dearcode/crab/log",
+			"Comment": "v1.6.3",
+			"Rev": "52cc049ef5040e3fe9555ecec713b6d9b35956df"
+		},
+		{
+			"ImportPath": "github.com/dearcode/crab/util/str",
+			"Comment": "v1.6.3",
+			"Rev": "52cc049ef5040e3fe9555ecec713b6d9b35956df"
 		},
 		{
 			"ImportPath": "github.com/eapache/go-resiliency/breaker",
-			"Comment": "v1.0.0-6-gb1fe83b",
-			"Rev": "b1fe83b5b03f624450823b751b662259ffc6af70"
+			"Comment": "v1.1.0",
+			"Rev": "ea41b0fad31007accc7f806884dcdf3da98b79ce"
 		},
 		{
 			"ImportPath": "github.com/eapache/go-xerial-snappy",
-			"Rev": "bb955e01b9346ac19dc29eb16586c90ded99a98c"
+			"Rev": "2b4bcfdd67a0b5a9b59fcbf9ae42046a575d3811"
 		},
 		{
 			"ImportPath": "github.com/eapache/queue",
-			"Comment": "v1.0.2-7-g44cc805",
-			"Rev": "44cc805cf13205b55f69e14bcb69867d1ae92f98"
+			"Comment": "v1.1.0-2-g093482f",
+			"Rev": "093482f3f8ce946c05bcba64badd2c82369e084d"
 		},
 		{
 			"ImportPath": "github.com/golang/glog",
@@ -56,45 +61,50 @@
 		},
 		{
 			"ImportPath": "github.com/golang/protobuf/proto",
-			"Rev": "11b8df160996e00fd4b55cbaafb3d84ec6d50fa8"
+			"Comment": "v1.1.0-8-g3a3da3a",
+			"Rev": "3a3da3a4e26776cc22a79ef46d5d58477532dede"
 		},
 		{
 			"ImportPath": "github.com/golang/protobuf/ptypes",
-			"Rev": "11b8df160996e00fd4b55cbaafb3d84ec6d50fa8"
+			"Comment": "v1.1.0-8-g3a3da3a",
+			"Rev": "3a3da3a4e26776cc22a79ef46d5d58477532dede"
 		},
 		{
 			"ImportPath": "github.com/golang/protobuf/ptypes/any",
-			"Rev": "11b8df160996e00fd4b55cbaafb3d84ec6d50fa8"
+			"Comment": "v1.1.0-8-g3a3da3a",
+			"Rev": "3a3da3a4e26776cc22a79ef46d5d58477532dede"
 		},
 		{
 			"ImportPath": "github.com/golang/protobuf/ptypes/duration",
-			"Rev": "11b8df160996e00fd4b55cbaafb3d84ec6d50fa8"
+			"Comment": "v1.1.0-8-g3a3da3a",
+			"Rev": "3a3da3a4e26776cc22a79ef46d5d58477532dede"
 		},
 		{
 			"ImportPath": "github.com/golang/protobuf/ptypes/timestamp",
-			"Rev": "11b8df160996e00fd4b55cbaafb3d84ec6d50fa8"
+			"Comment": "v1.1.0-8-g3a3da3a",
+			"Rev": "3a3da3a4e26776cc22a79ef46d5d58477532dede"
 		},
 		{
 			"ImportPath": "github.com/golang/snappy",
-			"Rev": "553a641470496b2327abcac10b36396bd98e45c9"
+			"Rev": "2e65f85255dbc3072edf28d6b5b8efc472979f5a"
 		},
 		{
 			"ImportPath": "github.com/juju/errors",
-			"Rev": "c7d06af17c68cd34c835053720b21f6549d9b0ee"
+			"Rev": "22422dad46e14561a0854ad42497a75af9b61909"
 		},
 		{
 			"ImportPath": "github.com/pierrec/lz4",
-			"Comment": "v1.0-10-g08c2793",
-			"Rev": "08c27939df1bd95e881e2c2367a749964ad1fceb"
+			"Comment": "v2.0.2",
+			"Rev": "6b9367c9ff401dbc54fabce3fb8d972e799b702d"
 		},
 		{
-			"ImportPath": "github.com/pierrec/xxHash/xxHash32",
-			"Comment": "v0.1-11-ga0006b1",
-			"Rev": "a0006b13c722f7f12368c00a3d3c2ae8a999a0c6"
+			"ImportPath": "github.com/pierrec/lz4/internal/xxh32",
+			"Comment": "v2.0.2",
+			"Rev": "6b9367c9ff401dbc54fabce3fb8d972e799b702d"
 		},
 		{
 			"ImportPath": "github.com/rcrowley/go-metrics",
-			"Rev": "1f30fe9094a513ce4c700b9a54458bbb0c96996c"
+			"Rev": "e2704e165165ec55d062f5919b4b29494e9fa790"
 		},
 		{
 			"ImportPath": "github.com/youtube/vitess/go/bytes2",
@@ -163,37 +173,38 @@
 		},
 		{
 			"ImportPath": "github.com/zssky/log",
-			"Rev": "c191741c80b644271233876acace772d6eb07248"
+			"Comment": "v1.0.0-2-g65433e4",
+			"Rev": "65433e49f452a7061509568f1d39da377a8f9ca0"
 		},
 		{
 			"ImportPath": "github.com/zssky/tc",
-			"Rev": "0ec2316a2f95b32a038252d6748c27c0dc85c1b7"
+			"Rev": "f467bba14c4a6ebd4cec14d94e3a0d9f9da69b23"
 		},
 		{
 			"ImportPath": "github.com/zssky/tc/cityhash",
-			"Rev": "0ec2316a2f95b32a038252d6748c27c0dc85c1b7"
+			"Rev": "f467bba14c4a6ebd4cec14d94e3a0d9f9da69b23"
 		},
 		{
 			"ImportPath": "github.com/zssky/tc/http",
-			"Rev": "0ec2316a2f95b32a038252d6748c27c0dc85c1b7"
+			"Rev": "f467bba14c4a6ebd4cec14d94e3a0d9f9da69b23"
 		},
 		{
 			"ImportPath": "golang.org/x/net/context",
-			"Rev": "859d1a86bb617c0c20d154590c3c5d3fcb670b07"
+			"Rev": "1e491301e022f8f977054da4c2d852decd59571f"
 		},
 		{
 			"ImportPath": "google.golang.org/genproto/googleapis/rpc/status",
-			"Rev": "595979c8a7bf586b2d293fb42246bf91a0b893d9"
+			"Rev": "694d95ba50e67b2e363f3483057db5d4910c18f9"
 		},
 		{
 			"ImportPath": "google.golang.org/grpc/codes",
-			"Comment": "v1.2.0-254-gbb78878",
-			"Rev": "bb78878767b96d411e740439ac820f118e95ae2f"
+			"Comment": "v1.9.2",
+			"Rev": "6b51017f791ae1cfbec89c52efdf444b13b550ef"
 		},
 		{
 			"ImportPath": "google.golang.org/grpc/status",
-			"Comment": "v1.2.0-254-gbb78878",
-			"Rev": "bb78878767b96d411e740439ac820f118e95ae2f"
+			"Comment": "v1.9.2",
+			"Rev": "6b51017f791ae1cfbec89c52efdf444b13b550ef"
 		},
 		{
 			"ImportPath": "gopkg.in/gomail.v2",

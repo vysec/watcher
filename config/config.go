@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/dearcode/crab/http/client"
-	"github.com/dearcode/crab/util"
+	"github.com/dearcode/crab/util/str"
 	"github.com/juju/errors"
 	"github.com/zssky/log"
 )
@@ -147,8 +147,8 @@ func topics(name, modules string) []string {
 
 func match(cond string) []MatchConfig {
 	ms := []MatchConfig{}
-	for _, c := range util.TrimSplit(cond, " && ") {
-		kvs := util.TrimSplit(c, " ")
+	for _, c := range str.TrimSplit(cond, " && ") {
+		kvs := str.TrimSplit(c, " ")
 		if len(kvs) < 2 {
 			log.Errorf("invalid line:%v", c)
 			continue
@@ -191,7 +191,7 @@ type AlertConfig struct {
 }
 
 func loadProcessorConfig(url string) ([]ProcessorConfig, []string, error) {
-	buf, _, err := client.New(time.Second*5).Get(url, nil, nil)
+	buf, err := client.New().Timeout(5).Get(url, nil, nil)
 	if err != nil {
 		return nil, nil, errors.Annotatef(err, "url:%v", url)
 	}
@@ -212,8 +212,8 @@ func loadProcessorConfig(url string) ([]ProcessorConfig, []string, error) {
 	for _, ac := range acs {
 		rs := RulesConfig{
 			Action: ActionConfig{
-				MailTo:    util.TrimSplit(ac.Email, ","),
-				MessageTo: util.TrimSplit(ac.Mobile, ","),
+				MailTo:    str.TrimSplit(ac.Email, ","),
+				MessageTo: str.TrimSplit(ac.Mobile, ","),
 				Message:   ac.Message,
 			},
 			Match: match(ac.Condition),

@@ -1,0 +1,40 @@
+{
+    "manager": {
+		"host":"logs.dbs.jd.com"
+	},
+    "harvester": {
+        "brokers": [ "172.20.188.115:9092" ],
+        "topics": [ "a-apigate-m-gate", "vtgate_sql" ],
+        "group": "watcher_group",
+        "client_id": "watcher"
+    },
+    "editor": [
+        {
+        "topics": ["a-apigate-m-gate", "vtgate_sql"],
+        "model": "json"
+       },
+        {
+        "topics": ["vtgate_sql"],
+        "model": "sqlhandle"
+       }
+    ],
+    "processor": [],
+    "alertor": {
+        "mail": {
+            "host": "smtp.jd.local",
+            "port": 587,
+            "user": "gum",
+            "from": "gum@jd.com",
+            "password": "DEkaakunwpt!946"
+        },
+        "message": {
+            "account": "gum.jd.com",
+            "extension":"gum",
+            "url": "http://soa-mms.jd.local/com.jd.mobilePhoneMsg.sender.client.service.SmsMessageRpcService/common/sendBatchSmsMessage"
+        },
+	"webmail": {
+	"url": "http://api.dbs.jd.com:9000/godbs/createMail/",
+	"token": "WaILaOkVIoOMsIzH+kNEXg=="
+    	}
+    }
+}

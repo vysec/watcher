@@ -8,7 +8,6 @@ import (
 	"fmt"
 	"strings"
 	"text/template"
-	"time"
 
 	"github.com/dearcode/crab/http/client"
 	"github.com/zssky/log"
@@ -118,7 +117,7 @@ func sendWeb(_ *meta.Message, to []string, title, body string) error {
 
 	buf, _ := json.Marshal(wa)
 
-	buf, _, err = client.New(time.Minute).POST(ec.Alertor.WebMail.URL, map[string]string{"Token": ec.Alertor.WebMail.Token}, bytes.NewBuffer(buf))
+	buf, err = client.New().Timeout(60).Post(ec.Alertor.WebMail.URL, map[string]string{"Token": ec.Alertor.WebMail.Token}, buf)
 	if err != nil {
 		return err
 	}
